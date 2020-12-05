@@ -1,0 +1,569 @@
+@charset "utf-8";
+/* max 1920 */
+
+
+.container, .container-fluid {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+#panel.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+.promobar {
+	padding: 10px 10px 10px 20px;
+}
+.promobar .text {
+	text-align: justify;
+}
+ul.verticaltabs {
+	width: 235px;
+}
+.statswrap>div {
+	width: 270px;
+}
+#content .flexwrap {
+	flex-wrap: wrap;
+}
+#content .flexwrap .fluid+.statswrap>* {
+	margin-right: 20px;
+}
+#content .lead {
+	margin-bottom: 40px;
+}
+#content h2 {
+	margin-top: 40px;
+}
+table.wide th, table.wide td {
+	padding: .7em 0 .7em 10px;
+}
+table.lastbtn tr td:last-child:not([colspan]) {
+	padding-left: 10px;
+}
+table.wide th svg, table.wide td svg {
+	display: none;
+}
+#contactmessages {
+	flex: 1;
+	width: auto;
+	max-width: 800px;
+}
+
+@media (max-width: 1400px) {
+#account {
+	width: 0px;
+	transition: width .2s ease-in-out;
+	overflow: visible;
+}
+#account.open .inner {
+	transition: visibility 0;
+	transition-delay: .2s;
+}
+#account:not(.open) .inner {
+	visibility: hidden;
+	opacity: 0;
+}
+#account.open {
+	width: 400px;
+}
+#account button.minimize {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	padding: 0;
+	width: 40px;
+	z-index: 10;
+}
+#account button.minimize svg.icon {
+	margin-right: 0;
+}
+#account:not(.open) button.minimize svg.close, #account.open button.minimize svg.open {
+	display: none;
+}
+#content {
+	width: calc(100% - 10px - 80px);
+	padding: 40px;
+	background-position: 50% 50%;
+}
+	#content h1 {
+		margin-right: 40px;
+	}
+}
+
+@media (max-width: 1200px) {
+.authcontent .logo {
+	margin: 0 80px;
+}
+.authcontent .hlead {
+	margin-bottom: 100px;
+}
+.authcontent .bens>div+div {
+	margin-left: 20px;
+}
+.authcontent .bens>div svg.icon {
+	font-size: 36px;
+}
+.authcontent .darkbg .container {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.authcontent .darkbg .container img {
+	width: 250px;
+	height: auto;
+}
+#content .flexwrap .fluid+.statswrap {
+	flex-wrap: wrap;
+}
+	/*
+.statswrap>div {
+	width: calc(33.33% - 40px);
+}
+	*/
+#content {
+	width: calc(100% - 80px);
+	padding: 40px;
+}
+#content .flexwrap .fluid+.statswrap {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+#content .statswrap {
+	display: inline-block;
+}
+#content .infoside {
+	margin-top: 0;
+	margin-left: 20px;
+	display: inline-flex;
+	vertical-align: top;
+	width: 440px;
+}
+#content a.btn, #content button.btn {
+	height: 36px;
+	padding: 0 15px;
+}
+table.wide th, table.wide td {
+	padding: .5em 0 .5em 10px;
+}
+ul.verticaltabs {
+	display: inline-block;
+}
+#content .statswrap.flexwrap {
+	display: flex;
+}
+.promobar>svg.icon {
+	width: 100%;
+}
+}
+
+@media (max-width: 992px) {
+.authcontent .plus {
+	display: none;
+}
+.authcontent .menu {
+	width: 220px;
+}
+.authcontent .logo {
+	margin: 0 60px;
+}
+.authcontent .bens {
+	flex-direction: column;
+	margin: 60px 0;
+}
+.authcontent .bens>div {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.authcontent .bens>div+div {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+.authcontent .bens>div svg.icon {
+	font-size: 48px;
+}
+.authcontent .darkbg p {
+	margin-right: 40px;
+}
+.statswrap>div {
+	width: calc(50% - 20px);
+}
+#content .flexwrap .fluid {
+	flex: none;
+	width: 100%;
+}
+#content .flexwrap .fluid+.statswrap, #content .flexwrap {
+	justify-content: center;
+}
+.lastnews .btn {
+	width: 100%;
+}
+#content .statswrap {
+	display: flex;
+}
+#content .statswrap>div {
+	margin-right: 20px;
+}
+#content .statswrap {
+	flex-wrap: wrap;
+}
+#content .flexwrap .prebooter, #content .flexwrap .pretable, #content .flexwrap .predeposit {
+	flex: 1;
+}
+#content .infoside {
+	margin-left: 0;
+	margin-top: 20px;
+}
+.settingswrap form {
+	max-width: none;
+}
+#content .statswrap .btn {
+	width: 100%;
+}
+#contactmessages input, #contactmessages textarea, #contactmessages .messagewrap {
+	width: 100%;
+}
+}
+
+@media (max-width: 768px) {
+.authcontent .logo {
+	margin: 0 40px;
+}
+.authcontent .menu {
+	width: 160px;
+}
+.authcontent .menu>li svg.icon {
+	font-size: 18px;
+}
+.authcontent .menu>li+li {
+	margin-left: 35px;
+}
+.authcontent .logo svg {
+	width: 120px;
+}
+.authcontent .hlead {
+	margin-top: 60px;
+	margin-bottom: 80px;
+	width: auto;
+}
+.authcontent .darkbg .container {
+	flex-direction: column-reverse;
+	text-align: center;
+}
+.authcontent .darkbg .container img {
+	margin-bottom: 40px;
+	width: 200px;
+}
+.authcontent .darkbg p {
+	margin-left: 40px;
+}
+.authcontent .home h2 {
+	text-align: center;
+}
+ul.verticaltabs {
+	width: 100%;
+}
+ul.verticaltabs li {
+	margin-right: 0;
+}
+ul.verticaltabs li.active:before {
+	display: none;
+}
+.planswrap {
+	justify-content: center;
+	width: 100%;
+}
+.planswrap .plan {
+	width: 320px;
+	margin: 0 0 20px 0;
+}
+.authcontent .network {
+	flex-direction: column-reverse;
+	align-items: center;
+}
+.authcontent .network img {
+	margin-top: 60px;
+	margin-right: 0;
+}
+.authcontent main>.container {
+	flex-direction: column;
+}
+.authcontent .intro {
+	margin-left: 0;
+	padding-left: 0;
+	border-left: 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	padding-top: 40px;
+	margin-top: 20px;
+	text-align: center;
+	width: auto;
+}
+#pricing .flexwrap {
+	flex-direction: column;
+}
+#pricing .flexwrap>div {
+	width: 100%;
+}
+#pricing .flexwrap>* {
+	margin-right: 0;
+}
+#notice .wrap {
+	width: 100%;
+}
+#notice .head .heading svg.icon {
+	font-size: 32px;
+}
+#notice .head .headline {
+	font-size: 16px;
+}
+#notice .wrap .head {
+	height: 105px;
+}
+#notice .inner {
+	padding: 40px 40px 30px;
+}
+.promobar .text {
+	font-size: 12px;
+	line-height: 1.4;
+}
+#content .flexwrap>* {
+	margin: 0 0 20px 0;
+	width: 100%;
+}
+	.inlineinput {
+		width: auto !important;
+		padding: 20px;
+	}
+	
+.statswrap>div {
+	width: 100%;
+	margin: 0 0 20px 0 !important;
+}
+#content .tablewrap, #content .pretable+.fluid {
+	overflow-x: scroll;
+	max-width: 100%;
+}
+#content .tablewrap table.wide th, #content .pretable+.fluid table.wide th {
+	white-space: nowrap;
+}
+#content .infoside {
+	width: 100%;
+}
+#content {
+	padding: 20px 10px;
+}
+#booter .head {
+	flex-wrap: wrap;
+	padding: 20px;
+}
+#booter .jshandle>div, #booter .head>div {
+	width: 100%;
+}
+#booter .head .stats {
+	margin-left: 0;
+	margin-top: 20px;
+}
+#booter .jshandle>div+div {
+	margin-top: 20px;
+}
+#booter .content {
+	padding: 20px;
+}
+#booter .jshandle {
+	flex-wrap: wrap;
+}
+#booter .content .innerflex input {
+	width: calc(50% - 5px);
+}
+}
+
+@media (max-width: 576px) {
+	
+#content {
+    width: calc(100% - 65px);
+	margin-left: 65px;
+}
+#menu {
+	width: 65px;
+}
+#menu .links li+li {
+	margin-top: 12.5px;
+}
+	
+	
+	
+.authcontent .hlead {
+	margin-top: 0;
+	margin-bottom: 60px;
+}
+.authcontent .hlead h1 {
+	font-size: 24px;
+}
+.authcontent .bens>div svg.icon {
+	font-size: 36px;
+}
+.authcontent .bens .iconwrap {
+	margin-right: 15px;
+}
+.authcontent .darkbg .container img {
+	width: 175px;
+}
+.planswrap .plan {
+	width: 100%;
+}
+.authcontent .network .stats>div {
+	display: block;
+	text-align: center;
+}
+.authcontent .menu {
+	width: auto;
+}
+.authcontent .network .stats .label {
+	margin-right: 0;
+	margin-bottom: 20px;
+	display: block;
+	width: auto;
+}
+.authcontent .logo {
+	margin: 0 0 20px;
+	width: 100%;
+	text-align: center;
+}
+.authcontent header>.container {
+	flex-wrap: wrap;
+}
+.authcontent .menu:first-of-type {
+	display: none;
+}
+.authcontent .line {
+	display: none;
+}
+.plan .period button.sf {
+	flex: 1;
+}
+.plan .period button.sf+button.sf {
+	margin-left: 10px;
+}
+#content h1 {
+	font-size: 22px;
+}
+#content h2 {
+	font-size: 18px;
+}
+.lastnews .post .meta {
+	flex-wrap: wrap;
+}
+.lastnews .post .meta>span {
+	width: 100%;
+	margin: 0 0 10px 0 !important;
+}
+.upgradepromo {
+	width: 100%;
+	padding: 40px 20px;
+}
+.upgradepromo .promo .label {
+	font-size: 14px;
+}
+.upgradepromo .promo .value {
+	font-size: 32px;
+}
+#content p, #content .lead p {
+	font-size: 14px;
+}
+#content .statswrap .iconwrap {
+	display: none;
+}
+.promobar {
+	width: 100%;
+	justify-content: center;
+}
+.promobar>svg.icon, .promobar .text {
+	display: none;
+}
+.promobar .btn {
+	margin-left: 0;
+}
+.text, #booter .servicestatus .text {
+	line-height: 1.4;
+}
+
+form .heading {
+	text-align: center;
+}
+	form .inner label+* {
+		margin: 0 auto;
+	}
+.tooltip>p, .tooltip>dl {
+	left: auto;
+	right: 0;
+	transform: none;
+}
+#deposit {
+	padding: 30px 20px !important;
+}
+#deposit .btnwrap button.sf {
+	width: 100%;
+	margin: 0 0 5px 0 !important;
+}
+#deposit .custom input.sf {
+	width: 75%;
+}
+#deposit .paybox .innerflex>* {
+	display: block;
+	width: 100%;
+	line-height: 1.4;
+}
+#deposit .paybox .innerflex+.innerflex {
+	margin-top: 10px;
+}
+#deposit .paybox .btcaddress {
+	line-height: 1.4;
+}
+.plan .period button.sf {
+	padding: 10px 2px;
+}
+.inlineinput label+input {
+	margin-left: 0;
+	margin-top: 10px;
+	width: 100%;
+	line-height: 1.4;
+}
+.lastnews .post .meta>span {
+	line-height: 1.4;
+}
+#content form .inner {
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px;
+}
+#content form .inner label {
+	width: 100%;
+	margin-right: 0;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#content form .inner output {
+	word-break: break-word;
+	line-height: 1.4;
+}
+#content form .showpw {
+	width: calc(100% - 32px);
+}
+#content form #qr {
+	margin-left: 0;
+}
+#account.open {
+	width: 100vw;
+}
+#account.open button.minimize {
+	position: absolute;
+}
+#account .controlbar {
+	padding: 20px 10px;
+}
+#account .controlbar>*+*, #account .links li+li {
+	margin-left: 10px;
+}
+}

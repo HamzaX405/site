@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+::-moz-selection {
+	background: #fff;
+	color: #1a2026;
+}
+::selection {
+	background: #fff;
+	color: #1a2026;
+}
+
+html {
+	background-color: #12161a;
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+	color: #667380;
+}
+a {
+	color: var(--color);
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+address, details, dl, figcaption, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul {
+	line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: #fff;
+}
+h1, h2, h3, h4, h5, h6, textarea {
+	line-height: 1.4;	
+}
+code, kbd, pre, samp {
+	font-family: "Source Code Pro", monospace;
+}
+
+.container, .container-fluid {
+	position: relative;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container-fluid {
+	max-width: none; 
+}
